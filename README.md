@@ -7,5 +7,6 @@ Personal notes on Machine Learning module in **Computing Methods for Experimenta
 
 ## Structure
 * `ML_notes.html` — The main documentation page styled for clear reading and navigation.
+* https://martidivi.github.io/CMEPDA-notes/ - Link for visualizing formatted notes.
 
 ## ⋆ Enjoy! ⋆
