@@ -121,11 +121,12 @@
 
     <div class="container">
         <nav class="sidebar">
-            <h3>Index</h3>
+            <h3>Contents</h3>
             <ul>
                 <li><a href="#how">How does it work?</a></li>
                 <li><a href="#supervised">Supervised learning</a></li>
                 <li><a href="#unsupervised">Unsupervised learning</a></li>
+                <li><a href="#evaluation">Evaluation</a></li>
 
             </ul>
         </nav>
@@ -158,6 +159,9 @@
             <ul>
                 <p><strong>ex.</strong> <i>linear regression, binary classification. </i></p>
             </ul>
+            <h3>Decision tree</h3>
+            <p>A decision tree aims at <strong>classifying data</strong> by recursively splitting nodes based on specific conditions. The structure consists of internal nodes (conditions), branches, and leaves (final class labels). To choose the best split at each step, we minimize the <strong>Gini Impurity</strong>, which measures how well-separated and "pure" the resulting data subsets are.</p>
+            <p>There also exist other data classification methods, such as the "nearest neighbor method" and the "K-means" method.</p>
 
             <h2 id="unsupervised">Unsupervised learning</h2>
             <p><strong>K-means algorithm</strong>. One of the possible tasks this method is suitable for is finding clusters among data. Procedure: randomly initialize a cluster center for each cluster, then assign each input point to the closest cluster center. The cluster center position is then updated as the mean of the position of the assigned inputs; the procedure is iterated until convergence. </p>
@@ -165,6 +169,11 @@
                 <img src="images/k-means.png" alt="k-means algorithm scheme." width="200">
                 <figcaption>Figure 1: Example of K-means algorithm scheme used in clustering. It will eventually converge in the next step...</figcaption>
             </figure>
+            <p>Another unsupervised algorithm is the <strong>Principal Component Algorithm</strong> (PCA), used for dimensionality reduction of complex datasets. It's similar to a change of basis in linear algebra. A "principal component" is a new variable built from a linear combination of the original data, and aims to catch the maximum variability (variance) of data. Also, the principal components must be mutually orthogonal. The original data are then projected onto the new components.</p>
+
+            <h2 id="evaluation">Evaluation</h2>
+            <p>Different models can represent different types of functions. The ability of a model to approximate a large number of functions is called <strong>capacity</strong> (often related to the number of free parameters, like polynomial degrees). While a higher capacity allows a model to fit complex patterns, an excessive capacity can lead to <strong>overfitting</strong>, where the model memorizes the training data instead of learning general rules, failing to generalize on new data. One has to find a trade-off between capacity and <strong>generalization capability</strong>.
+            <strong>Regularization techniques</strong> aim at maximizing capacity while maintaining good generalization capability.</p>
         </main>
 
     </div>
